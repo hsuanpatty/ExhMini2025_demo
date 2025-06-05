@@ -27,6 +27,7 @@
 	margin-right: calc(var(--bs-gutter-x) * -0.5);
 	margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
+
 .row > * {
 	flex-shrink: 0;
 	width: 100%;
@@ -36,7 +37,6 @@
 	margin-top: var(--bs-gutter-y);
 }
 
-
 .py-30 {
   padding: 30px 0;
 }
@@ -44,65 +44,6 @@
 .py-100 {
   padding: 100px 0;
 }
-
-/* owl 切換效果 */
-/* .owl-theme .owl-dots .owl-dot {
-    outline: none;
-}
-
-.owl-carousel .owl-item div {
-  position: relative;
-  overflow: hidden;
-}
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  max-height: 1490px;
-  -webkit-transition: all 20s;
-  -moz-transition: all 20s;
-  -o-transition: all 20s;
-  transition: all 20s;
-  transition-timing-function: linear;
-}
-.owl-carousel .owl-item:nth-child(even) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  -o-transform-origin: bottom right;
-  transform-origin: bottom right;
-}
-
-.owl-carousel .owl-item:nth-child(odd) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-}
-
-.owl-carousel .owl-item.active:nth-child(even) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.owl-carousel .owl-item.active:nth-child(odd) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-} */
-
 
 /* ExhMini2025 */
 .exh {
@@ -152,7 +93,6 @@
 
   width: 100vw;
   height: 100%;
-  /* background: linear-gradient(180deg,rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 1) 100%); */
 } 
 
 .exh .container {
@@ -165,23 +105,11 @@
 	white-space: normal;
   z-index: 1;
 }
-/* .exh .exhMini-box-padding {
-    position: absolute;
-    top: 69%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-
-    width: 80%;
-} */
 
 .exhMini-box {
   background-color: rgba(0, 0, 0, 0.605);
   backdrop-filter: blur(0.5px);
-  /* max-width: 530px;
-  width: 80%; */
   padding: 30px 0;
-  /* padding: 50px  0; */
   border: 1px solid var(--white);
   border-radius: 10px ;
   text-align: center;
@@ -230,7 +158,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-
 
 .exh-banner-btn button{
   color: #fff;
@@ -422,9 +349,6 @@
     background: var(--pink);
     border: solid 1px var(--pink);
     color: #fff;
-    /* color: #4e4e4e;
-    background-color: var(--lightblue2);
-    border: solid 1px #959595; */
     letter-spacing: 0.05rem;
     padding: 10px 12px;    
     margin:  3px 2px 3px;
@@ -462,9 +386,6 @@
     background: var(--red);
     border: solid 1px var(--red);
     color: #fff;
-    /* background: var(--pink);
-    border: solid 1px var(--pink);
-    color: #fff; */
 }
 
 .ExhMini-aside-title {
@@ -473,7 +394,6 @@
 }
 
 .ExhMini-navigate {
-    /* position: absolute; */
     bottom: 0px;
     margin: 10px 5px;
     font-size: .875rem;
