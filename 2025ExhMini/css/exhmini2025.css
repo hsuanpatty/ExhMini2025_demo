@@ -12,6 +12,7 @@
     --apricot: #f46262;
     --lightgrey: #e2dcdc;
     --grey2: #727272;
+    --grey3: #2e2e2e;
     --green: #51b653;
     --lightpink: #f7d7db;
     --block: #222222;
@@ -815,7 +816,7 @@ img.searchBox-area-icon {
 
 .right-2 .space-price-box {
   font: 500 15px "微軟正黑體", "黑體";
-  color: var(--grey);
+  color: var(--grey3);
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
   padding: 10px 0 0;
