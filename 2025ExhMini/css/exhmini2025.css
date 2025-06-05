@@ -26,6 +26,14 @@
 	margin-right: calc(var(--bs-gutter-x) * -0.5);
 	margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
+.row > * {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x) * 0.5);
+	padding-left: calc(var(--bs-gutter-x) * 0.5);
+	margin-top: var(--bs-gutter-y);
+}
 
 
 .py-30 {
@@ -872,17 +880,30 @@ ol#default li{
   padding: 10px 0;
 }
 
-.exhMini-box-right .price{
+
+.exhMini-box-right .price,
+.exhMini-box-right .noprice{
     color: var(--orange2);
-     font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
+    margin: 12px 0 10px;
+}
+
+.exhMini-box-right .price {
+       font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		"Noto Color Emoji";
-    margin: 12px 0 10px;
+    letter-spacing: 0.1rem;
+}
+
+.exhMini-box-right .noprice{
+     font: 600 26px  Arial, "Noto Sans", "Liberation Sans",
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
+    letter-spacing: 0.3rem;
 }
 
 .exhMini-box-right .price span{
     color: var(--orange2);
-    font: 700 20px "微軟正黑體", "黑體";
+    font: 700 21px "微軟正黑體", "黑體";
 }
 
 /* media */
@@ -937,6 +958,11 @@ ol#default li{
 
   .exhMini-box-right .price {
     font: 700 35px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+    margin: 12px 0 10px ;
+  } 
+
+    .exhMini-box-right .noprice {
+    font: 600 22px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
     margin: 12px 0 10px ;
   } 
 
@@ -1034,7 +1060,7 @@ ol#default li{
 
   .chosen-label-1,
   .chosen-label-2 {
-    width: 14%;
+    width: 15%;
     padding: 4px 8px 5px 9px;
     font: 600 15px "微軟正黑體", "黑體";
     border-radius: 8px;
@@ -1074,6 +1100,7 @@ ol#default li{
 
   .exhMini-px {
     padding: 0 6px 20px;
+    margin: 0 auto;
   }
 
   .exhMini-box-left, .exhMini-box-right {
@@ -1159,7 +1186,7 @@ ol#default li{
   }
 
   .exhMini-px {
-    padding: 15px 10px;
+    padding: 15px 0;
   }
 
   .chosen-py {
@@ -1188,7 +1215,7 @@ ol#default li{
   }
   
   .date-infomation span {
-    padding: 3px 10px;
+    padding: 3px 18px;
   }
 
   .space-price-box {
@@ -1199,6 +1226,13 @@ ol#default li{
     margin-top: 10px;
   }
 
+}
+
+
+@media (max-width: 375.98px) { 
+   .date-infomation span {
+    padding: 3px 15px;
+  }
 }
 
 
