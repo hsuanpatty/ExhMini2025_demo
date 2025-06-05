@@ -867,7 +867,7 @@ ol#default li{
 .exhMini-box-right p {
   font: 600 16px "微軟正黑體", "黑體";
   color: var(--grey2);
-  padding: 10px 0;
+  margin: 10px 0;
 }
 
 
@@ -878,7 +878,7 @@ ol#default li{
 }
 
 .exhMini-box-right .price {
-       font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
+    font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		"Noto Color Emoji";
     letter-spacing: 0.1rem;
@@ -977,7 +977,7 @@ ol#default li{
   .chosen-label-1,
   .chosen-label-2 {
     width: 16%;
-  } 
+  }
 }
 
 @media (min-width: 1400px) { 
@@ -1084,7 +1084,7 @@ ol#default li{
 
   .chosen-label-1, .chosen-label-2 {
     font: 600 15px "微軟正黑體", "黑體";
-    width: 18%;
+    width: 19%;
     padding: 5px 5px;
   }
 
@@ -1172,7 +1172,7 @@ ol#default li{
 
   .exhMini-box-right p {
     font: 600 18px "微軟正黑體", "黑體";
-    padding: 16px 0 2px;
+    margin: 16px 0 2px;
   }
 
   .exhMini-px {
