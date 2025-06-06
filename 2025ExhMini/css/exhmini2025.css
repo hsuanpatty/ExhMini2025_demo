@@ -28,13 +28,16 @@
 	margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 
-.row > * {
-	flex-shrink: 0;
-	width: 100%;
-	max-width: 100%;
-	padding-right: calc(var(--bs-gutter-x) * 0.5);
-	padding-left: calc(var(--bs-gutter-x) * 0.5);
-	margin-top: var(--bs-gutter-y);
+
+@media (min-width: 992px) { 
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
 }
 
 .py-30 {
@@ -832,7 +835,7 @@ ol#default li{
 
 .date-infomation span {
   border: 1.5px solid var(--lightgrey);
-  padding: 3px 8px;
+  padding: 1px 12px 3px;
   border-radius: 5px;
    transition: all 0.3s;
 }
@@ -1026,7 +1029,7 @@ ol#default li{
   }
 
   .exhMini-box-right p {
-    padding: 10px 6px 14px 0;
+    padding: 10px 6px 10px 0;
   }
 }
 
@@ -1040,7 +1043,7 @@ ol#default li{
 
   .exhMini-box-right{
     width: 46.666667%;
-    margin: auto 30px auto 10px;
+    margin: auto 30px auto 20px;
   }
 
   .chosen-label-1,
@@ -1186,11 +1189,11 @@ ol#default li{
 
   .date-infomation span a,
   .date-infomation .time-box a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .date-infomation span {
-    padding: 3px 15px 3px 20px;
+    padding: 3px 18px 3px 23px;
   }
 
   .space-price-box {
