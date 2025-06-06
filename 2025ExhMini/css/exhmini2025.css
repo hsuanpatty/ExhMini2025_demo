@@ -45,6 +45,64 @@
   padding: 100px 0;
 }
 
+/* owl 切換效果 */
+/* .owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+.owl-carousel .owl-item div {
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  max-height: 1490px;
+  -webkit-transition: all 20s;
+  -moz-transition: all 20s;
+  -o-transition: all 20s;
+  transition: all 20s;
+  transition-timing-function: linear;
+}
+.owl-carousel .owl-item:nth-child(even) img {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+.owl-carousel .owl-item:nth-child(odd) img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.owl-carousel .owl-item.active:nth-child(even) img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.owl-carousel .owl-item.active:nth-child(odd) img {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+} */
+
 
 /* ExhMini2025 */
 .exh {
@@ -187,6 +245,7 @@
 
 
 /* media */
+
 @media (min-width: 1400px) { 
   .exh .container {
     width: 33%;
@@ -262,7 +321,7 @@
   } 
 
   .exh img {
-    height: 60vh;
+    height: 30vh;
     object-fit: cover;
     object-position: center;
   }
@@ -273,6 +332,11 @@
 }
 
  @media (max-width: 767.98px) { 
+
+   .exh img {
+    height: 60vh;
+  }
+
   .exh-pt {
     padding-top: 40px;
   }
@@ -352,6 +416,9 @@
     background: var(--pink);
     border: solid 1px var(--pink);
     color: #fff;
+    /* color: #4e4e4e;
+    background-color: var(--lightblue2);
+    border: solid 1px #959595; */
     letter-spacing: 0.05rem;
     padding: 10px 12px;    
     margin:  3px 2px 3px;
@@ -391,6 +458,9 @@
     background: var(--red);
     border: solid 1px var(--red);
     color: #fff;
+    /* background: var(--pink);
+    border: solid 1px var(--pink);
+    color: #fff; */
 }
 
 .ExhMini-aside-title {
@@ -399,6 +469,7 @@
 }
 
 .ExhMini-navigate {
+    /* position: absolute; */
     bottom: 0px;
     margin: 10px 5px;
     font-size: .875rem;
@@ -793,17 +864,6 @@ ol#default li{
    font: 500 14px "微軟正黑體", "黑體";
 }
 
-.date-infomation .box-2 {
-    border: 1.5px solid var(--red);
-    background-color: transparent;
-    padding-bottom: 4px;
-}
-
-.date-infomation .box-2 a {
-    color: var(--red);
-   font: 500 14px "微軟正黑體", "黑體";
-}
-
 .exhMini-box-right p {
   font: 600 16px "微軟正黑體", "黑體";
   color: var(--grey2);
@@ -899,7 +959,7 @@ ol#default li{
   .chosen-label-1,
   .chosen-label-2 {
     width: 20%;
-    padding: 4px 10px 6px;
+    padding: 4px 10px 5px;
   } 
 
   .exhMini-box-right p {
@@ -1129,18 +1189,8 @@ ol#default li{
     font-size: 14px;
   }
 
-  .date-infomation .time-box a {
-    color: var(--orange2);
-  }
-
-  .date-infomation .time-box {
-    padding-left: 15px;
-    border: 1.5px solid var(--red);
-    background-color: transparent;
-  }
-  
   .date-infomation span {
-    padding: 3px 18px;
+    padding: 3px 15px 3px 20px;
   }
 
   .space-price-box {
@@ -1149,6 +1199,13 @@ ol#default li{
 
   .exhMini-box-left, .exhMini-box-right {
     margin-top: 10px;
+  }
+
+  .exhMini-box-right .price,
+  .exhMini-box-right .noprice {
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
   }
 
 }
