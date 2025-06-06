@@ -45,64 +45,6 @@
   padding: 100px 0;
 }
 
-/* owl 切換效果 */
-/* .owl-theme .owl-dots .owl-dot {
-    outline: none;
-}
-
-.owl-carousel .owl-item div {
-  position: relative;
-  overflow: hidden;
-}
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  max-height: 1490px;
-  -webkit-transition: all 20s;
-  -moz-transition: all 20s;
-  -o-transition: all 20s;
-  transition: all 20s;
-  transition-timing-function: linear;
-}
-.owl-carousel .owl-item:nth-child(even) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  -o-transform-origin: bottom right;
-  transform-origin: bottom right;
-}
-
-.owl-carousel .owl-item:nth-child(odd) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-}
-
-.owl-carousel .owl-item.active:nth-child(even) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.owl-carousel .owl-item.active:nth-child(odd) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-} */
-
 
 /* ExhMini2025 */
 .exh {
@@ -245,7 +187,6 @@
 
 
 /* media */
-
 @media (min-width: 1400px) { 
   .exh .container {
     width: 33%;
@@ -411,9 +352,6 @@
     background: var(--pink);
     border: solid 1px var(--pink);
     color: #fff;
-    /* color: #4e4e4e;
-    background-color: var(--lightblue2);
-    border: solid 1px #959595; */
     letter-spacing: 0.05rem;
     padding: 10px 12px;    
     margin:  3px 2px 3px;
@@ -425,7 +363,9 @@
 
 @media (max-width: 1199.98px) { 
   .ExhMini-otherAreas-link {
-    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -451,9 +391,6 @@
     background: var(--red);
     border: solid 1px var(--red);
     color: #fff;
-    /* background: var(--pink);
-    border: solid 1px var(--pink);
-    color: #fff; */
 }
 
 .ExhMini-aside-title {
@@ -462,7 +399,6 @@
 }
 
 .ExhMini-navigate {
-    /* position: absolute; */
     bottom: 0px;
     margin: 10px 5px;
     font-size: .875rem;
@@ -482,6 +418,10 @@
 @media (max-width: 768px) {
     #main-search{
         display: none;
+    }
+
+    .ExhMini-otherAreas-link {
+      justify-content: left;
     }
 }
 
@@ -947,7 +887,7 @@ ol#default li{
   }
 
   .exhMini-box-right .price {
-    font: 700 35px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+    font: 700 32px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
     margin: 12px 0 10px ;
   } 
 
@@ -958,8 +898,8 @@ ol#default li{
 
   .chosen-label-1,
   .chosen-label-2 {
-    width: 18%;
-    padding: 4px 10px;
+    width: 20%;
+    padding: 4px 10px 6px;
   } 
 
   .exhMini-box-right p {
@@ -1004,16 +944,11 @@ ol#default li{
     line-height: 1.6rem;
   }
 
-  .exhMini-box-right .price {
+  .exhMini-box-right .price,
+  .right-2 .price {
     font: 700 30px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
     margin: 0 ;
   } 
-
-   .right-2 .price {
-    font: 700 30px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
-    margin: 0 ;
-  } 
-
 
   .chosen-label-1,
   .chosen-label-2 {
