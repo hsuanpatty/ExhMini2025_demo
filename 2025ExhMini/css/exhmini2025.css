@@ -28,6 +28,12 @@
 	margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 
+.Mini-container {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
 
 @media (min-width: 992px) { 
   .row > * {
@@ -38,113 +44,58 @@
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-top: var(--bs-gutter-y);
   }
+
+  .Mini-container {
+    width: 86vw;
+  }
+
 }
 
 .py-30 {
-  padding: 30px 0;
+  padding: 20px 0 30px;
 }
 
 .py-100 {
   padding: 100px 0;
 }
 
-/* owl 切換效果 */
-/* .owl-theme .owl-dots .owl-dot {
-    outline: none;
-}
-
-.owl-carousel .owl-item div {
-  position: relative;
-  overflow: hidden;
-}
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  max-height: 1490px;
-  -webkit-transition: all 20s;
-  -moz-transition: all 20s;
-  -o-transition: all 20s;
-  transition: all 20s;
-  transition-timing-function: linear;
-}
-.owl-carousel .owl-item:nth-child(even) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  -o-transform-origin: bottom right;
-  transform-origin: bottom right;
-}
-
-.owl-carousel .owl-item:nth-child(odd) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-}
-
-.owl-carousel .owl-item.active:nth-child(even) img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.owl-carousel .owl-item.active:nth-child(odd) img {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-} */
-
-
 /* ExhMini2025 */
 .exh {
-    width: 100vw;
-    height: auto;
-    overflow: hidden
+  width: 100vw;
+  height: auto;
+  overflow: hidden
 }
 
 .exh-pt {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .exh img {
-    width: 100vw;
-    margin: auto;
-    display: block;
+  width: 100vw;
+  margin: auto;
+  display: block;
 }
 
 .exh .owl-dots {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.exh  .owl-dots .owl-dot span {
-    background: transparent;
-    border: solid 1px var(--lightblue);
-    margin: 5px;
+.exh .owl-dots .owl-dot span {
+  background: transparent;
+  border: solid 1px var(--lightblue);
+  margin: 5px;
 }
 
-.exh  .owl-dots .owl-dot.active span,
-.exh  .owl-dots .owl-dot:hover span {
-    background: var(--lightblue);
+.exh .owl-dots .owl-dot.active span,
+.exh .owl-dots .owl-dot:hover span {
+  background: var(--lightblue);
 }
-
 
 .exh{
-    position: relative;
+  position: relative;
 }
 
 .exh .banner-bg {
@@ -171,10 +122,7 @@
 .exhMini-box {
   background-color: rgba(0, 0, 0, 0.605);
   backdrop-filter: blur(0.5px);
-  /* max-width: 530px;
-  width: 80%; */
   padding: 30px 0;
-  /* padding: 50px  0; */
   border: 1px solid var(--white);
   border-radius: 10px ;
   text-align: center;
@@ -189,15 +137,15 @@
 }
 
 .exhMini-box .tag {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px ;
-    max-width: 510px;
-    width: 100%;
-    margin: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 510px;
+  width: 100%;
+  margin: auto;
 }
 
 .exhMini-box .tag span {
@@ -212,7 +160,7 @@
   color: var(--white);
   line-height: 1.8rem;
   letter-spacing: 0.1rem;
-    max-width: 420px;
+  max-width: 420px;
   width: 100%;
   margin: 5px auto 15px;
 } 
@@ -248,12 +196,69 @@
 
 
 /* media */
-
 @media (min-width: 1400px) { 
   .exh .container {
     width: 33%;
-    top: 70%;
+    top: 67%;
   }
+
+  /* owl 切換效果 */
+  /* .owl-theme .owl-dots .owl-dot {
+    outline: none;
+  }
+
+  .owl-carousel .owl-item div {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    max-height: 1490px;
+    -webkit-transition: all 20s;
+    -moz-transition: all 20s;
+    -o-transition: all 20s;
+    transition: all 20s;
+    transition-timing-function: linear;
+  }
+  .owl-carousel .owl-item:nth-child(even) img {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    -o-transform-origin: bottom right;
+    transform-origin: bottom right;
+  }
+
+  .owl-carousel .owl-item:nth-child(odd) img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+  }
+
+  .owl-carousel .owl-item.active:nth-child(even) img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .owl-carousel .owl-item.active:nth-child(odd) img {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  } */
 }
 
 @media (min-width: 1800px) { 
@@ -263,15 +268,22 @@
 
   .exh-pt {
     padding-top: 120px;
-}
+  }
 }
 
 @media (min-width: 2000px) { 
   .exh .container {
     width: 25%;
-    bottom: 10%;
+    bottom: -8%;
   }
 }
+
+@media (min-width: 2200px) { 
+  .exh .container {
+    width: 25%;
+  }
+}
+
 
 
 @media (max-width: 1399.98px) {
@@ -281,12 +293,14 @@
   }
   
   .exhMini-box {
-    padding: 25px 20px;
+    padding: 40px 0;
+    width: 72%;
+    margin: auto;
   }
 
   .exhMini-box h2 {
     font: 600 25px "微軟正黑體", "黑體";
- }
+  }
 
   .exhMini-box p {
     font: 600 16px "微軟正黑體", "黑體";
@@ -298,45 +312,51 @@
   }
 
   .multiline-ellipsis {
-  -webkit-line-clamp: 1;
+    -webkit-line-clamp: 1;
   }
 } 
-
-@media (max-width: 1199.98px) { 
-  .exh .container {
-    width: 62%;
-    top: 68%;
-  } 
-}
 
 @media (max-width: 1199.98px) { 
   .exh-pt {
     padding-top: 115px;
   }
+
   .exh .container {
-    top: 60%;
+    width: 62%;
+    top: 63%;
   }
 }
 
- @media (max-width: 991.98px) { 
+@media (max-width: 991.98px) { 
   .exh-pt {
     padding-top: 100px;
   } 
 
   .exh img {
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center;
   }
 
-   .exh .container {
+  .exh .container {
     top: 50%;
   }
 }
 
- @media (max-width: 767.98px) { 
+@media (max-width: 899.98px) { 
+  .exh .container {
+    top: 63%;
+  }
 
-   .exh img {
+  .exhMini-box {
+    padding: 25px 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) { 
+
+  .exh img {
     height: 60vh;
   }
 
@@ -353,9 +373,15 @@
   } 
 
   .exhMini-box {
-     backdrop-filter: blur(1px);
+    padding: 25px 20px;
+    backdrop-filter: blur(1px);
     backdrop-filter: blur(0);
   }
+
+   .exh .container {
+    top: 65%;
+  }
+
 }
 
 @media (max-width: 575.98px) { 
@@ -367,12 +393,16 @@
   .exhMini-box h2 {
     font: 600 22px "微軟正黑體", "黑體";
   }
+
+  .exh img {
+    height: 70vh;
+  }
 }
 
 
 /* 麵包屑+seach */
 .ExhMini-container {
-  padding: 30px 0 40px;
+  padding: 10px 0 30px;
 }
 
 /* 麵包屑 */
@@ -382,21 +412,21 @@
 }
 
 .navigate-BGcolor .FitTrip-navigate-exh {
-    width: 86vw;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-left: 6px;
-    text-align: left;
+  width: 86vw;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 6px;
+  text-align: left;
 }
 
 .navigate-BGcolor .FitTrip-navigate-exh a:after {
-    content: "\f105";
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    font-size: 11px;
-    font-weight: 900;
-    margin-left: 5px;
-    margin-right: 5px;
+  content: "\f105";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 11px;
+  font-weight: 900;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /*  類別 */
@@ -406,29 +436,26 @@
 }
 
 .ExhMini-otherAreas-link::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(189, 189, 189, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(189, 189, 189, 0.5);
 }
 
 .ExhMini-otherAreas-link::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(189, 189, 189, 0.5);
+  background: rgba(189, 189, 189, 0.5);
 }
 
 .ExhMini-otherAreas-link a {
-    background: var(--pink);
-    border: solid 1px var(--pink);
-    color: #fff;
-    /* color: #4e4e4e;
-    background-color: var(--lightblue2);
-    border: solid 1px #959595; */
-    letter-spacing: 0.05rem;
-    padding: 10px 12px;    
-    margin:  3px 2px 3px;
-    display: inline-block;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: .2s;
+  background: var(--pink);
+  border: solid 1px var(--pink);
+  color: #fff;
+  letter-spacing: 0.05rem;
+  padding: 10px 12px;    
+  margin:  3px 2px 3px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: .2s;
 }
 
 @media (max-width: 1199.98px) { 
@@ -451,6 +478,10 @@
     padding: 0;
   }
 
+  .ExhMini-otherAreas-link {
+    padding: 11px 0 10px;
+  }
+
   .ExhMini-otherAreas-link a{
     font-size: 14px;
     margin: 4px 2px;
@@ -458,269 +489,265 @@
 }
 
 .ExhMini-otherAreas-link a:hover {
-    background: var(--red);
-    border: solid 1px var(--red);
-    color: #fff;
-    /* background: var(--pink);
-    border: solid 1px var(--pink);
-    color: #fff; */
+  background: var(--red);
+  border: solid 1px var(--red);
+  color: #fff;
 }
 
 .ExhMini-aside-title {
-    font-size: .875rem;
-    margin-bottom: 15px;
+  font-size: .875rem;
+  margin-bottom: 15px;
 }
 
 .ExhMini-navigate {
-    /* position: absolute; */
-    bottom: 0px;
-    margin: 10px 5px;
-    font-size: .875rem;
-    color: #0c02de;
+  bottom: 0px;
+  margin: 10px 5px;
+  font-size: .875rem;
+  color: #0c02de;
 }
 
 .ExhMini-navigate a {
-    text-decoration: underline;
-    color: #000;
+  text-decoration: underline;
+  color: #000;
 }
 
 /* seach */
 #main-search {
-    background: #ffffff;
-    padding: 5px 0;
+  background: #ffffff;
+  padding: 5px 0;
 }
 @media (max-width: 768px) {
-    #main-search{
-        display: none;
-    }
+  #main-search{
+    display: none;
+  }
 
-    .ExhMini-otherAreas-link {
-      justify-content: left;
-    }
+  .ExhMini-otherAreas-link {
+    justify-content: left;
+  }
 }
 
 #main-search .search-title{
-    justify-content: center;
+  justify-content: center;
 }
 
 #main-search .search-title li{
-position: relative;
+  position: relative;
 }
 
 #main-search .search-title li::before{
-    position: absolute;
-    content: "";
-    border-bottom:2px #7f7d7d solid ;
-    }
+  position: absolute;
+  content: "";
+  border-bottom:2px #7f7d7d solid ;
+}
 
 ul.search-title {
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1400px) {
-    ul.search-title {
-        padding: 0;
-    }
+  ul.search-title {
+    padding: 0;
+  }
 }
 
 ul.search-title li {
-    font-family: 'Noto Sans TC';
-    font-size: 1.125rem;
-    padding: 0 12px;
-    border-right: solid 1px #8c001a;
+  font-family: 'Noto Sans TC';
+  font-size: 1.125rem;
+  padding: 0 12px;
+  border-right: solid 1px #8c001a;
 }
 
 @media (max-width: 576px) {
-    ul.search-title li {
-        padding: 0 8px;
-    }
+  ul.search-title li {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 360px) {
-    ul.search-title li {
-        padding: 0 6px;
-    }
+  ul.search-title li {
+    padding: 0 6px;
+  }
 }
 
 @media (max-width: 320px) {
-    ul.search-title li {
-        padding: 0 2px;
-    }
+  ul.search-title li {
+    padding: 0 2px;
+  }
 }
 
 ul.search-title li:first-of-type {
-    font-family: 'Noto Sans TC';
-    font-weight: bold;
-    font-size: 1.125rem;
+  font-family: 'Noto Sans TC';
+  font-weight: bold;
+  font-size: 1.125rem;
 }
 
 ul.search-title li:last-of-type {
-    border-right: none;
+  border-right: none;
 }
 
 ul.search-title li a {
-    display: block;
-    transition: .5s;
+  display: block;
+  transition: .5s;
 }
 
 ul.search-title li a:hover {
-    color: #8c001a;
+  color: #8c001a;
 }
 
 #search-tool {
-    border: solid 1px #8c001a;
-    border-radius: 20px;
-    margin: 0 5%;
-    padding: 5px 15px;
-    line-height: 21px;
-    font-size: .875rem;
-    display: flex;
-    flex-wrap: wrap;
-    color: #767676;
-    font-weight: bold;
-    background: #fff;
-    margin-bottom: 35px;
+  border: solid 1px #8c001a;
+  border-radius: 20px;
+  margin: 0 5%;
+  padding: 5px 15px;
+  line-height: 21px;
+  font-size: .875rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: #767676;
+  font-weight: bold;
+  background: #fff;
+  margin-bottom: 35px;
 }
 #search-tool2 {
-    display: none;
-    background-color: #ebebeb;
-    line-height: 21px;
-    font-size: .875rem;
-    padding: 20px;
-    flex-wrap: wrap;
-    color: #767676;
-    font-weight: bold;
+  display: none;
+  background-color: #ebebeb;
+  line-height: 21px;
+  font-size: .875rem;
+  padding: 20px;
+  flex-wrap: wrap;
+  color: #767676;
+  font-weight: bold;
 }
 
 @media (max-width: 1400px) {
-    #search-tool {
-        margin: 0;
-    }
+  #search-tool {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
-    #search-tool {
-        display: none;
-    }
-    #search-tool2{
-        display: flex;
-    }
+  #search-tool {
+    display: none;
+  }
+  #search-tool2{
+    display: flex;
+  }
 }
 
 #search-tool2 .category{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
 }
 #search-tool2 .category span{
-    flex: 1 0 25%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-left: 2px solid var(--red);
-    box-sizing: border-box;
-    white-space: normal;
-    word-break: break-all;
+  flex: 1 0 25%;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 2px solid var(--red);
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-all;
 }
 #search-tool2 .category span:first-child {
-    border: none;
+  border: none;
 }
 
 .searchBox-area {
-    width: 30%;
+  width: 30%;
 }
 
 .searchBox-date {
-    width: 35%;
+  width: 35%;
 }
 
 .searchBox-keyword {
-    width: 35%;
+  width: 35%;
 }
 
 .searchBox-selectArea,
 .searchBox-selectCountry {
-    width: calc(50% - 42px);
+  width: calc(50% - 42px);
 }
 
 .go-box,
 .back-box {
-    width: calc(50% - 38px);
-    position: relative;
-    display: inline-block;
+  width: calc(50% - 38px);
+  position: relative;
+  display: inline-block;
 }
 
 .go-box img,
 .back-box img {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 6px;
-    right: 10px;
-    pointer-events: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 6px;
+  right: 10px;
+  pointer-events: none;
 }
 
 #flatpickr-go,
 #flatpickr-back {
-    width: 100%;
+  width: 100%;
 }
 
 img.searchBox-area-icon {
-    vertical-align: middle;
-    margin: 0 5px;
+  vertical-align: middle;
+  margin: 0 5px;
 }
 
 #search-tool input ,#search-tool2 input{
-    -webkit-appearance: none;
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius: 0;
-    color: #333;
-    padding: 0 5px;
-    line-height: 28px;
-    height: 28px;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 0;
+  color: #333;
+  padding: 0 5px;
+  line-height: 28px;
+  height: 28px;
 }
 
 #search-tool select ,#search-tool2 select{
-    border: 1px solid #ccc;
-    border-radius: 0;
-    background: url(../images/icon/20_arrow.png) no-repeat scroll 95% center #fff;
-    -webkit-appearance: none;
-    color: #333;
-    padding: 0 5px;
-    height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: url(../images/icon/20_arrow.png) no-repeat scroll 95% center #fff;
+  -webkit-appearance: none;
+  color: #333;
+  padding: 0 5px;
+  height: 28px;
 }
 
 .searchBox-keyword input {
-    width: calc(100% - 181px);
+  width: calc(100% - 181px);
 }
 
 .searchBox-btn {
-    font-size: 1rem;
-    width: 115px;
-    height: 28px;
-    display: inline-block;
-    padding: 0px 0 0 10px;
-    line-height: 26px;
-    margin-left: 10px;
-    border-left: solid 1px #000;
+  font-size: 1rem;
+  width: 115px;
+  height: 28px;
+  display: inline-block;
+  padding: 0px 0 0 10px;
+  line-height: 26px;
+  margin-left: 10px;
+  border-left: solid 1px #000;
 }
 
 .searchBox-btn a {
-    transition: .5s;
+  transition: .5s;
 }
 
 @media (max-width: 768px) {
     .searchBox-btn a {
-        color: #8c001a;
+      color: #8c001a;
     }
 }
 
 .searchBox-btn:hover a {
-    color: #8c001a;
+  color: #8c001a;
 }
 
 
@@ -733,7 +760,7 @@ img.searchBox-area-icon {
 
 /* 精選行程 */
 .chosen-py {
-  padding: 40px 0 80px;
+  padding: 40px 0;
 }
 
 .exhMini-box-left,
@@ -784,29 +811,29 @@ img.searchBox-area-icon {
 
 
 .exhMini-box-right h1 {
-    font: 600 20px "微軟正黑體", "黑體";
-    color: var(--brown);
-    letter-spacing: 0.1rem;
-    margin: 5px 0;
+  font: 600 20px "微軟正黑體", "黑體";
+  color: var(--brown);
+  letter-spacing: 0.1rem;
+  margin: 5px 0;
 }
 
 .right-2 h1 {
   font: 600 20px "微軟正黑體", "黑體";
-    color: var(--block);
-    letter-spacing: 0.1rem;
-    margin: 5px 0;
+  color: var(--block);
+  letter-spacing: 0.1rem;
+  margin: 5px 0;
 }
 
 .exhMini-box-right h3 {
-    font: 600 15px "微軟正黑體", "黑體";
-    color: var(--apricot);
-    letter-spacing: 0.1rem;
+  font: 600 15px "微軟正黑體", "黑體";
+  color: var(--apricot);
+  letter-spacing: 0.1rem;
 }
 
 .right-2 h3 {
-    font: 600 15px "微軟正黑體", "黑體";
-    color: var(--apricot);
-    letter-spacing: 0.1rem;
+  font: 600 15px "微軟正黑體", "黑體";
+  color: var(--apricot);
+  letter-spacing: 0.1rem;
 }
 
 .space-price-box {
@@ -835,9 +862,9 @@ ol#default li{
 
 .date-infomation span {
   border: 1.5px solid var(--lightgrey);
-  padding: 1px 12px 3px;
-  border-radius: 5px;
-   transition: all 0.3s;
+  padding: 3px 12px 3px 14px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .date-infomation span:hover {
@@ -849,7 +876,7 @@ ol#default li{
 .date-infomation span a {
   color: var(--grey2);
   font-weight: 600;
-   transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .date-infomation span:hover a {
@@ -857,14 +884,14 @@ ol#default li{
 }
 
 .date-infomation .time-box {
-    border: 1.5px solid var(--red);
-    background-color: var(--red);
-    padding-bottom: 4px;
+  border: 1.5px solid var(--red);
+  background-color: var(--red);
+  padding-bottom: 4px;
 }
 
 .date-infomation .time-box a {
   color: var(--white);
-   font: 500 14px "微軟正黑體", "黑體";
+  font: 500 14px "微軟正黑體", "黑體";
 }
 
 .exhMini-box-right p {
@@ -876,27 +903,27 @@ ol#default li{
 
 .exhMini-box-right .price,
 .exhMini-box-right .noprice{
-    color: var(--orange2);
-    margin: 12px 0 10px;
+  color: var(--orange2);
+  margin: 12px 0 10px;
 }
 
 .exhMini-box-right .price {
-    font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji";
-    letter-spacing: 0.1rem;
+  font: 700 38px  Arial, "Noto Sans", "Liberation Sans",
+	sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+	"Noto Color Emoji";
+  letter-spacing: 0.1rem;
 }
 
 .exhMini-box-right .noprice{
-     font: 600 26px  Arial, "Noto Sans", "Liberation Sans",
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji";
-    letter-spacing: 0.3rem;
+  font: 600 26px  Arial, "Noto Sans", "Liberation Sans",
+	sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+	"Noto Color Emoji";
+  letter-spacing: 0.3rem;
 }
 
 .exhMini-box-right .price span{
-    color: var(--orange2);
-    font: 700 21px "微軟正黑體", "黑體";
+  color: var(--orange2);
+  font: 700 21px "微軟正黑體", "黑體";
 }
 
 /* media */
@@ -910,7 +937,7 @@ ol#default li{
 }
 
 @media (min-width: 900px) { 
-    .exhMini-box-left{
+  .exhMini-box-left{
     flex: 0 0 auto;
     width: 38%;
     margin: auto;
@@ -928,14 +955,11 @@ ol#default li{
 
 @media (min-width: 992px) { 
   .exhMini-box-left{
-    flex: 0 0 auto;
     width: 38%;
   }
 
   .exhMini-box-right{
-    flex: 0 0 auto;
-    width: 58%;
-    margin: auto ;
+    width: 60%;
   }
 
   .exhMini-box-left .exh_Aicon {
@@ -954,7 +978,7 @@ ol#default li{
     margin: 12px 0 10px ;
   } 
 
-    .exhMini-box-right .noprice {
+  .exhMini-box-right .noprice {
     font: 600 22px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
     margin: 12px 0 10px ;
   } 
@@ -996,14 +1020,14 @@ ol#default li{
   }
 
   
-   .exhMini-box-left .exh_Aicon {
+  .exhMini-box-left .exh_Aicon {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
-   .space-price-box {
+  .space-price-box {
     line-height: 1.6rem;
   }
 
@@ -1015,7 +1039,7 @@ ol#default li{
 
   .chosen-label-1,
   .chosen-label-2 {
-    width: 16%;
+    width: 17%;
     padding: 6px 10px;
   }
 
@@ -1026,10 +1050,16 @@ ol#default li{
   .date-d-xl {
     display: flex;
     align-items: center;
+    height: 45px;
+    padding-top: 10px;
   }
 
   .exhMini-box-right p {
     padding: 10px 6px 10px 0;
+  }
+
+  .chosen-py {
+    padding: 40px 0 80px;
   }
 }
 
@@ -1056,15 +1086,8 @@ ol#default li{
 }
 
 
-@media (max-width: 767.98px) { 
-.exhMini-box-right h1 {
-    font: 600 18px "微軟正黑體", "黑體";
-  }
-}
-
-
 @media (max-width: 991.98px) {
-    .exhMini-box-right .price {
+  .exhMini-box-right .price {
     font: 700 20px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
   }
 
@@ -1110,7 +1133,11 @@ ol#default li{
 }
 
  @media (max-width: 767.98px) { 
-   .exhMini-px {
+  .exhMini-box-right h1 {
+    font: 600 18px "微軟正黑體", "黑體";
+  }
+
+  .exhMini-px {
     padding: 0 10px;
   }
 
@@ -1134,14 +1161,14 @@ ol#default li{
     text-align: center;
   }
 
-   .chosen-label-1, .chosen-label-2 {
-    font: 600 18px "微軟正黑體", "黑體";
+  .chosen-label-1, .chosen-label-2 {
+    font: 600 16px "微軟正黑體", "黑體";
     width: 26%;
     padding: 8px 5px;
     margin: 2px 0 15px;
   }
 
-    .exhMini-box-right .price {
+  .exhMini-box-right .price {
     font: 700 30px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
   }
 }
@@ -1149,18 +1176,25 @@ ol#default li{
 
 @media (max-width: 575.98px) { 
   .chosen-label-1, .chosen-label-2 {
-   width: 100%;
    padding: 6px 4px;
   }
 
   .exhMini-box-right h1 {
     font: 600 20px "微軟正黑體", "黑體";
-    line-height: 2rem;
+    line-height: 1.6rem;
   }
 
   .exhMini-box-right h3 {
-    font: 600 17px "微軟正黑體", "黑體";
+    font: 600 16px "微軟正黑體", "黑體";
     line-height: 1.8rem;
+  }
+
+  .exh_Aicon-img {
+    width: 120px;
+  }
+
+  .exhMini-box-left .exh_Aicon {
+    bottom: 0.1%;
   }
 
   .space-price-box {
@@ -1170,11 +1204,11 @@ ol#default li{
 
   .exhMini-box-right p {
     font: 600 18px "微軟正黑體", "黑體";
-    margin: 16px 0 2px;
+    margin: 12px 0 2px;
   }
 
   .exhMini-px {
-    padding: 15px 0;
+    padding: 15px 0 20px;
   }
 
   .chosen-py {
@@ -1184,12 +1218,13 @@ ol#default li{
   .date-infomation {
       line-height: 40px;
       display: block;
-      margin-top: 10px;
+      margin-top: 2px;
   }
 
   .date-infomation span a,
   .date-infomation .time-box a {
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 0;
   }
 
   .date-infomation span {
@@ -1208,7 +1243,11 @@ ol#default li{
   .exhMini-box-right .noprice {
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+  }
+
+  .exhMini-box-right .price {
+    font: 700 35px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
 }
@@ -1216,7 +1255,7 @@ ol#default li{
 
 @media (max-width: 375.98px) { 
    .date-infomation span {
-    padding: 3px 15px;
+    padding: 3px 11px;
   }
 }
 
